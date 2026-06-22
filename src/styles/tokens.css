@@ -1,0 +1,55 @@
+/* ===================================================================
+   ReWear Design Tokens
+   Light mode: warm cream "boutique" palette
+   Dark mode: charcoal "after-hours" palette
+   =================================================================== */
+
+:root {
+  /* ---- Light theme (default) ---- */
+  --color-bg: #faf7f2;
+  --color-surface: #ffffff;
+  --color-surface-2: #f3eee5;
+  --color-ink: #1c1b19;
+  --color-muted: #6e6a63;
+  --color-border: #e7e2d9;
+  --color-accent: #b6593c;
+  --color-accent-ink: #ffffff;
+  --color-sage: #6b7a5e;
+  --color-sage-soft: #e7ebe2;
+  --color-danger: #a3402f;
+  --color-overlay: rgba(28, 27, 25, 0.55);
+
+  /* ---- Typography ---- */
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* ---- Layout ---- */
+  --container-max: 1280px;
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --shadow-sm: 0 1px 3px rgba(28, 27, 25, 0.06);
+  --shadow-md: 0 8px 24px rgba(28, 27, 25, 0.08);
+  --shadow-lg: 0 18px 48px rgba(28, 27, 25, 0.12);
+
+  --transition-base: all 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --color-bg: #17181a;
+  --color-surface: #201e1c;
+  --color-surface-2: #2a2724;
+  --color-ink: #f3efe8;
+  --color-muted: #a9a39a;
+  --color-border: #34312d;
+  --color-accent: #d97a52;
+  --color-accent-ink: #1c1b19;
+  --color-sage: #8fa37e;
+  --color-sage-soft: #2b3027;
+  --color-danger: #d97a6c;
+  --color-overlay: rgba(0, 0, 0, 0.65);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 18px 48px rgba(0, 0, 0, 0.45);
+}
