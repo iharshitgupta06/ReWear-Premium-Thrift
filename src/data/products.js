@@ -827,7 +827,7 @@ export const products = [
     "originalPrice": 2763,
     "description": "Vintage Steel Watch \u2014 A carefully inspected pre-loved piece, cleaned and restored to premium condition. Each item is hand-picked for quality, character and lasting wear.",
   
-    "image": "https://www.ancienne.es/wp-content/uploads/2023/11/02984x1-1-640x800.jpg",
+    "image": "https://www.analogshift.com/cdn/shop/articles/BANNER.jpg?v=1687089593&width=2000",
  
     "gallery": [
       // "https://picsum.photos/seed/rewear131a/600/800",
