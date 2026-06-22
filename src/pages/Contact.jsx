@@ -82,7 +82,7 @@ export default function Contact() {
             <h3>Reach Us Directly</h3>
             <p><strong>Email</strong><br />hello@rewear.com</p>
             <p><strong>Phone</strong><br />+91 9xxxx xxxx0</p>
-            <p><strong>Address</strong><br />ReWear Studio, Indore, Madhya Pradesh, India</p>
+            <p><strong>Address</strong><br />ReWear Studio, Bhopal, Madhya Pradesh, India</p>
             <p><strong>Hours</strong><br />Mon – Sat, 10am – 7pm IST</p>
           </aside>
         </div>
