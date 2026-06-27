@@ -6,30 +6,6 @@ curated pre-loved clothing and accessories.
 
 ---
 
-## 🚀 Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-That's it. The app runs at `http://localhost:5173`.
-
-Other scripts:
-
-```bash
-npm run build      # production build into /dist
-npm run preview     # preview the production build locally
-```
-
-> **Note on images:** product photos and hero images use placeholder URLs
-> from `picsum.photos` (and `pravatar.cc` for testimonial avatars) so the
-> site looks complete out of the box. An internet connection is needed for
-> these images to load. See **Replacing Images** below to swap them for
-> your own local files.
-
----
-
 ## 🧱 Tech Stack
 
 - React 18
@@ -39,9 +15,7 @@ npm run preview     # preview the production build locally
 - Pure CSS with CSS variables (theming) + a small set of reusable utility
   classes (no CSS framework required to run the project)
 - Browser `localStorage` (cart, wishlist, theme preference)
-
-No TypeScript, no backend, no auth, no payment gateway — by design.
-
+ 
 ---
 
 ## 📁 Folder Structure
@@ -125,24 +99,6 @@ Theme (light/dark) is toggled from the navbar and persisted in
 
 ---
 
-## 🎨 Design System
-
-Colors, fonts, radii, and shadows are defined once as CSS variables in
-`src/styles/tokens.css`, and swapped automatically when `data-theme="dark"`
-is set on `<html>` (handled by `ThemeContext`). To restyle the whole site,
-edit the variables in that one file.
-
-- **Display font:** Fraunces (serif, used for headings)
-- **Body font:** Inter (sans-serif, used for UI text)
-- **Light theme:** warm cream background, near-black text, terracotta accent
-- **Dark theme:** charcoal background, off-white text, lighter terracotta accent
-
-Each product card carries a small "impact tag" (e.g. *"♻ Saved 2,400L of
-water"*) — a signature detail that ties the visual design back to ReWear's
-sustainability story.
-
----
-
 ## 🖼️ Replacing Images
 
 Product data lives in `src/data/products.js`. Each product object includes:
@@ -170,43 +126,3 @@ The `localImageHint` field already suggests a sensible path per product so
 this swap is quick to do in bulk.
 
 ---
-
-## 🧩 State Management
-
-Three lightweight Context providers wrap the app in `main.jsx`:
-
-- **ThemeContext** — light/dark mode, persisted to `localStorage`
-- **CartContext** — cart items, quantities, subtotal, persisted to `localStorage`
-- **WishlistContext** — saved products, persisted to `localStorage`
-
-Each context exposes a small, readable API (e.g. `addToCart`,
-`toggleWishlist`, `toggleTheme`) so it's easy to use from any component and
-easy to explain in a viva.
-
----
-
-## 📦 Product Catalog
-
-43 demo products across:
-
-- **Men:** Shirts, Oversized Tees, Hoodies, Jackets, Jeans
-- **Women:** Dresses, Tops, Jackets, Denim, Skirts
-- **Accessories:** Watches, Bags, Caps, Sunglasses, Jewelry
-
-Each product has an id, name, gender, category, price, original price,
-description, image + gallery, rating, available sizes, and a
-sustainability "impact" line.
-
----
-
-## 🛠️ Customizing
-
-- **Add a product:** add a new object to the array in `src/data/products.js`.
-- **Add a page:** create a file in `src/pages/`, then register its route in `src/App.jsx`.
-- **Change brand colors/fonts:** edit `src/styles/tokens.css`.
-- **Change nav links:** edit the `NAV_LINKS` array in `src/components/Navbar.jsx`.
-
----
-
-Built as a learning-friendly, presentation-ready demo. No external backend
-required — everything runs client-side.
