@@ -4,11 +4,6 @@ A production-style front-end e-commerce thrift store built with React + Vite.
 ReWear is a fictional brand demo: a sustainable fashion marketplace for
 curated pre-loved clothing and accessories.
 
-This project is great for a **college major project**, **portfolio
-showcase**, or a **React learning project**. It is fully front-end —
-no backend, no database, no payment gateway, no authentication. Cart and
-wishlist state are saved to `localStorage` so they survive a page refresh.
-
 ---
 
 ## 🚀 Getting Started
